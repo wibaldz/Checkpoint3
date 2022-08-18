@@ -2,62 +2,106 @@
 <html>
     <head>
         <title>Fatiha ADEL Portfolio</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
         <meta charset="utf_8">
         <link rel="shortcut icon" href="logohtml.png">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" 
+        rel="stylesheet">
+        <link href="https : //fonts.googleapis.com/css2?family= Danse+Script :wght@500 & display = swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/2a1f89c07a.js" crossorigin="anonymous"></script>
+
     </head>
 
-    <body align="center">
+    <body>
         <a name="top"></a>
         <header>
-            <nav>
+            <div class="navbar">
                 <!--barre de navigation-->    
-                <ul type="none"; class="nav-bar">    
-                    <li class="nav-item"><a href="#Acc">Acceuil</a></li> 
-                    <li class="nav-item"><a href="#A propos">A propos de moi</a></li>
-                    <li class="nav-item"><a href="#Qua">Qualités particulières</a></li>                     
-                    <li class="nav-item"><a href="#com">Compétences</a></li>  
-                    <li class="nav-item"><a href="#ou">Outils</a></li>                  
-                    <li class="nav-item"><a href="#con">contact</a></li>
-                    <hr>
+                <ul>    
+                    
+                    <li><i class="fa fa-home" aria-hidden="true"></i>
+                        <a href="#Acc">Acceuil</a></li>                     
+
+                    
+                    <li><i class="fa fa-file" aria-hidden="true"></i>
+                        <a href="#A propos">A propos de moi</a></li>
+                    
+                    
+                    
+                        <li><i class="fa fa-user" aria-hidden="true"></i>
+                        <a href="#Qua">Qualités particulières</a></li>                     
+                    
+                    
+                                     
+                        <li><i class="fa fa-cogs" aria-hidden="true"></i>
+                        <a href="#com">Compétences</a></li> 
+                    
+
+                    
+                        <li><i class="fa fa-users" aria-hidden="true"></i>
+                        <a href="#ou">Outils</a></li>
+                                     
+                    
+                    
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i>
+                        <a href="#con">Contacts</a></li>
+                    
+            
                 </ul>
-            </nav>
-                
 
-            <section>
-                <div>
-                    <!--introduction sur moi-->
-                    <a id="Acc"></a>
-                    <h1><i>Fatiha ADEL</i></h1>
-                    <p>Développeur Fullstack (front-end et back-end)<br> je conçois et code des choses magnifiquement simples et j'aime ce que je fait.</p>
-                    <p>Vous souhaitez en savoir plus?</p>
-                    <a href="cv.pdf">VOIR MON CV</a><br><br>
-                    <video src="video.mp4" height="200px" autoplay loop muted></video><br>
-                </div>
-            </section>
-
-            <section>
-                <img src="https://previews.123rf.com/images/djvstock/djvstock1511/djvstock151101898/
-                48229587-concept-de-d%C3%A9veloppeur-web-avec-un-design-des-ic%C3%B4nes-de-la
-                -technologie-illustration-vectorielle-10-e.jpg" height="280px" alt="logo développeur">
-            
-            </section>
-       
-            
-            
-        </header>
+            </div>
         
-        <main>
-            <section>
+        </header>       
+        
+        <main class="main">
+            
+            
+            
+            <!--introduction sur moi-->     
+            
+            <section class="chapitre1">                         
+                <a id="Acc"></a><h1>Fatiha ADEL</h1>
+                <div id="img1">
+                    <img src="https://previews.123rf.com/images/djvstock/djvstock1511/djvstock151101898/
+                    48229587-concept-de-d%C3%A9veloppeur-web-avec-un-design-des-ic%C3%B4nes-de-la
+                    -technologie-illustration-vectorielle-10-e.jpg" alt="logo développeur">
+                </div> 
+                
+                <div id="int">
+                    <p>Développeur Fullstack (front-end et back-end) <br>
+                    je conçois et code des choses magnifiquement simples et 
+                    j'aime ce que je fait.<br>
+                    Vous souhaitez en savoir plus?
+                    <a href="cv.pdf"><p id="cv">Voir mon CV</p></a>
+                
+                </div>
+                
+                
+                         
+            </section>
+              
+            <section class="chapitre2">
+                
                 <a id="A propos"></a>
                 <h2><i>A propos de moi</i></h2>
-                <p>Je suis une développeuse Fullstack.J'ai étudié à <a href="https://gomycode.com" target="_blank">GomyCode</a>, une école basée à Tunis.<br> 
-                J'adore construire des interfaces et coder des productions intéractives.<br>
-                 Je recherche un poste à temps plein à partir de Janvier 2023.</p>    
+                
+                <div>
+                    <video src="video.mp4" autoplay loop muted></video>
+                </div>
+                                
+                <p>Je suis une développeuse Fullstack.<br>J'ai étudié à <a href="https://gomycode.com" 
+                    target="_blank">GomyCode,</a> une école basée à Tunis.<br> 
+                    J'adore construire des interfaces et coder des productions intéractives.<br>
+                    Je recherche <em>un poste</em> à temps plein à partir de <em>Janvier 2023</em>.</p>    
+                
+                
+            
             </section>
 
-            <section>
+            <section class="chapitre3">
                 <a id="Qua"></a>
-                <h2><i>Qualités particulières</i></h2>
+                <h2><i>Qualités particulières</i></h2><br>
                 <ul type="none">
                     <li>Bon ésprit d'organisation et de suivi des taches</li>
                     <li>Rigueuere dans le travail et aptitude à apprendre rapidement
@@ -65,21 +109,26 @@
                     <li>Prête à suivre une quelconque formation necessaire</li>
                     <li>Prête à efectuer des déplacements à l'echelle nationale ou internationale</li>
                 </ul>
-            <section>
+            </section>
+            
+            <section class="chapitre4">
                 <a id="com"></a>
                 <h2><i>Compétences</i></h2>
-                <div>
-                    <table border="1"; align="center"; width="700px">
+                <div id="tab">
+                    <table>
                         <tr>
                             <th>Front-end</th>
                             <th>Back-end</th>
                         </tr>
                        
                         <tr>
-                            <td><img src="htmlcssjs.png" alt="image du groupe Html css et Js"></a></td>
-                            <td><img src="nodejsexpress.png" height="100px" alt="logo node js et express">
-                            <img src="mongodb.png" height="100px" alt="logo mongodb"><br>
-                            <img src="mongoos.png" height="100px" alt="logo mongoos"></td>
+                            <td><img src="htmlcssjs.png" alt="image du groupe Html css et Js">
+                            </td>
+                            
+                            <td><img src="nodejsexpress.png" alt="logo node js et express">
+                                <img src="mongodb.png" alt="logo mongodb">
+                                <br><img src="mongoos.png" alt="logo mongoos">
+                            </td>
 
                         </tr>
                     
@@ -88,9 +137,10 @@
         
             </section>
                 
-            <section>
-                <a id="ou"><h2><i>Les outils que j'utilise pour la plupart de mes projets</i></h2></a>
-                <table align="center"; width="800px">
+            <section class="chapitre5">
+                <a id="ou"></a>
+                <h2><i>Les outils que j'utilise pour la plupart de mes projets</i></h2>
+                <table id="tab2">
                     <tr>
                         <th><li>Visual Studio Code</li></th>
                         <th><li>GitHub</li></th>
@@ -104,47 +154,55 @@
 
             </section>
 
-            <section>
-                <div>
-                    <a id="con"><h2><i>Vous souhaitez me contacter? c'est ici que ça se passe!</i></h2></a>
+            
+
+        </main>
+       
+        <footer>
+            
+            <section class="chapitre6">
+                <a id="con"></a>
+                <h2><i>Vous souhaitez me contacter? c'est ici que ça se passe!</i></h2>
+                    
+                <div>                
+                    
+                    
+                    <label for="pays">Pays</label>
+                    <select name="pays" id="pay">     
+                            <option value="Algérie">Algérie</option>
+                            <option value="Autre">Autre</option>
+                    </select><br>
+                    
                     <form action="/action.php" method="post"></form>
                     <label for="name">Nom</label><input id="name" type="text" placeholder="Entrez votre Nom"><br>
                     <label for="firstname">Prénom</label><input id="firstname" type="text" placeholder="Entrez votre prénom"><br>
                     <label for="mail">Adress mail</label><input id="mail" type="text" placeholder="Entrez votre adresse mail"><br>
-
-
-                <br>
-                <textarea name="Message" id="message" cols="30" rows="10">Entrez votre message</textarea>
-                <input type="submit" value="Valider"><br>
-
-                <!--envoi mail-->
-                <a href="mailto:fatihaadel@yahoo.fr">Ou ecrivez-moi</a>
+                    <textarea name="Message" id="message" cols="30" rows="10">Entrez votre message</textarea><br>
+                    <input id="btn" type="submit" value="Valider"><br><br>
+                    <!--envoi mail-->
+                    <a href="mailto:fatihaadel@yahoo.fr"><p>Ou écrivez-moi</p></a>
+                
                 </div>
             </section>
-
-        </main>
-       
-        <footer><br><br>
-            <div>
-                <img src="linkedin.png" height="30px" alt="logo linkedin">
-                <img src="whatsapp.jpeg" height="30px" alt="logo whatsapp">
-                <img src="facebook.jpeg" height="30px" alt="logo facebook">
+            
+            <div id="icons">
+                <a href="http://wwww.twitter.fr"><i class="fa fa-twitter"></i></a>
+                <a href="http://www.facebook.fr"><i class="fa fa-facebook"></i></a>
+                <a href="http://www.linkedin.fr"><i class="fa fa-linkedin"></i></a>
+                <a href="http://www.instagram.fr"><i class="fa fa-instagram"></i></a>
+                
 
 
             </div>
 
-<a href="#top">Go to the top</a>
+        <p><img src=""<a href="#top"></a></p> 
+
+        
+
+
+
         </footer>
         
     </body>
-
-
-
-
-
-
-
-
-
 
 </html>
