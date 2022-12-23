@@ -1,287 +1,582 @@
 
-
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
 /* GENERAL*/
 
 *{
     margin: 0;
+    box-sizing: border-box;
+    
+    
+}
+
+body{
     margin: 0;
-    
-    
+    padding: 0;
+    background-color: black;
+    font-family: 'Caveat', cursive;
 }
 
-li :visited{
-    font-weight: bold;
-}
 
-li :hover{
-    color: blue;
-    
-}
-
-a :active{
-    color: black;
-}
-
-p{
-    font-size: 3em;
-}
-
-a{
-    text-decoration: none;
-}
-
-/* BARRE DE NAVIGATION */
-.navbar{
-  
-    overflow: auto;
-    font-family: 'Roboto', sans-serif;
-    background-color: rgb(171, 205, 216);
-    opacity: 0.9;
+nav{
+    width: 100vw;
+    height: 70px;
+    margin-left: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+    background-color: black;
     position: fixed;
-    width: 100%;
-    margin: 0;
-         
+
+
+
 }
 
-.navbar ul{
-    float: left;
-    margin-left: 10px;
-    list-style: none;
-
-   
-}
-
-.navbar ul li{
-   
-   float: left;
-
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 20px;
     
 }
 
-.navbar a{
-    
-    padding: 17px 20px;
-    line-height: 30px;
-    font-size: 2em;
-    color: black;
+nav ul li{
+    list-style-type: none;
+    margin: 20px;
+
+
+}
+
+nav ul li a{
     text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+    
 }
 
-.navbar a:hover{
-    color: blue;
-    transform: scale(3em);
-    transition: 0.7;
+nav ul li a:hover {
+    color: #7e7e7e;
+    font-weight: bold;
+    transition: .5s all ease-in-out;
 }
 
+nav ul li i{
+    font-size: 20px;
+    color: white;
+    
+}
 /*----------chapitre1----------*/
 
-h1{
-    font-family: 'Dancing script', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 5em;
-    text-align: center;
-    color: palevioletred;
-    border-top: 5px;
-    margin: 50px;
-    text-shadow: 2px 5px 1px black;
-}
-
 .chapitre1{
-    background-image: url("imagefond.jpg");
-    
-    
+    width: 80vw;
+    height: 100vh;
+
+   background-image: url("imagefond.jpg");
+   margin-left: 100px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center; 
 }
-.chapitre1 a{
-    font-size: 0.8em;
+
+.cv{
+    margin-left: 50px;
 }
-/*-------------chapitre2----------*/
-h2{
-    font-size: 5em;
-    color: brown;
-    text-align: center;
-    margin: 50px;
+.chapitre1 h1{
+    font-size: 3rem;
+    color: gray;
     text-shadow: 2px 5px 1px black;
+    
 }
 
-
-.chapitre1, .chapitre2{
-    display: grid;
-    grid-template-columns: 30% 70%;
-    padding: 20px;
-    text-align: center;
-    color:brown;
-    height: 930px;
+.chapitre1 p{
+    font-size: 1.5rem;   
 }
 
-img{
-    height: 500px;
-    box-shadow: 6px 6px 28px -1px black;
-}
-
-#cv{
-    text-decoration: none;
-    font-size: 60px;
-    color: rgb(34, 2, 2);
-}
-
-video{
+.chapitre1 img{
     height: 300px;
-    border: 0;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: inset;
+    position: absolute;
+    margin-left: 750px;
 }
+
+
+
+
+/*-------------chapitre2----------*/
 
 .chapitre2{
+    width: 80vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
     background-color: bisque;
+
 }
+
+.ch2 {
+    margin-left: 50px;
+}
+
+.chapitre2 h2{
+    font-size: 3rem;
+    color: gray;
+    text-shadow: 2px 5px 1px black; 
+  
+}
+
+.chapitre2 p {
+    font-size: 1.3rem;
+}
+
+.chapitre2 video{
+    width: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: inset;
+    position: absolute;
+    margin-left: -400px;
+    margin-top: -100px;
+}
+
+/*chapitre 3*/
+
 .chapitre3{
-    height: 930px;
+    width: 80vw;
+    height: 100vh;
+    margin-left: 100px;
+    padding-top: 50px;
     display: block;
-    padding-top: 200px;
-    text-align: center;
+    text-align: left;
     color:brown;
     background-color: rgb(226, 245, 189)
     
 }
 
-.chapitre3 ul li{
-    font-size: 2.9em;
+.chapitre3 h2 {
+    font-size: 3rem;
+    color: gray;
+    text-shadow: 2px 5px 1px black;
+    margin-left: 50px;
+
 }
 
+.chapitre3 ul li{
+    font-size: 1.5rem;
+}
 
+/*chapitre4*/
 .chapitre4{
-    
+    width: 80vw;
+    height: 100vh;
+    margin-left: 100px;
     background-color: rgb(250, 226, 189);
-    height: 930px;
-    
-    
+    display: flex;
+    align-items: center;
+ 
+}
+
+.chapitre4 h2{
+    font-size: 3rem;
+    color: gray;
+    text-shadow: 2px 5px 1px black;
+    margin-left: 50px;
+
+
 }
 .chapitre4 table{
     
     display: flex;
     justify-content: center;
-    height: 600px;
-    margin-top: 50px;
-    margin-left: 200px;
-    background-color: azure;
-    width: 60%;
+    height: 530px;
+    margin-left: 160px;
+    background-color: black;
+    width: 75%;
+    border-style: double;
+    border-color: white;
+
+
 }
-
-
 
 #tab th{
 
     color: rgb(20, 18, 91);
     font-size: 2.8em;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+             
+}
+
+#tab td{
     border-style: double;
-          
-    
 }
-
-
-
-
-
-td img{
-    height: 200px;
+#tab td img{
+    height: 150px;
     display: inline;
-    margin: 5px 20px 5px 20px;
-    
-    
+    padding: 5px 20px 5px 20px;  
     
 }
 
-
-
+/*chapitre 5*/
 
 .chapitre5{
-    height: 930px;
+    width: 80vw;
+    height: 100vh;
+    margin-left: 100px;
     display: grid;
-    text-align: center;
-    color:brown;
-    margin-top: 200px;
+    align-items: center;
     background-color: rgb(246, 239, 239);
 }
+.chapitre5 h2 {
+    font-size: 3rem;
+    color: gray;
+    text-shadow: 2px 5px 1px black;
+    margin-left: 50px;
+    margin: 50px;
 
+}
 #tab2{
     display: flex;
     justify-content: center;
     height: 300px;
-    margin-top: 50px;
+
 }
 
 .chapitre5 li{
-    font-size: 3em;
+    font-size: 2rem;
+    margin-left: 40px;
 
 }
 
+/*chapitre6*/
+
 .chapitre6{
-    height: 930px;
-    padding: 20px 0 10px 0;
-    text-align: center;
-    color:brown; 
+    width: 80vw;
+    height: 100vh;
+    margin-left: 100px;
     background-color: beige;   
 }  
 
+.chapitre6 h2 {
+    font-size: 2rem;
+    color: gray;
+    text-shadow: 2px 5px 1px black;
+    margin-left: 50px;
+
+}
+
 form{
-    margin: 0 auto;
-    max-width: 900px;
-    
-}
-
-input, textarea, button, select{
-    border: none;
-    border-radius: 8px;
-    width: 45%;
-    padding: 15px 10px;
-    margin: 3px 0;
-    font-size: 1.8em;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-
-}
-
-textarea{
-    height: 120px;
-
-}
-
-#btn{
-    font-size: 3em;
-    background-color: aquamarine;
-}
-
-#btn :hover{
-    background-color: brown;
-    color: blueviolet;
-    cursor: pointer;
-    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 50px;
 }
 
 label{
-    font-size: 2.5em;
-    padding: 30px 25px;
+    margin-left: 10px;
+    margin-top: 10px;
+
 }
 
-#icons i{
-    width: 50px;
-    text-align: right;
+input{
+    margin-left: 20px;
+}
+
+textarea{
+    width: 50%;
+    height: 200px;
+    margin-left: 200px;
+    margin-top: 10px;
     
 }
 
-#icons a{
-    
-    margin: 0 15px;
-    font-size: 3em;
-    color: grey;
+button{
+    width: 100px;
+    height: auto;
+    text-align: center;
+    margin-left: 450px;
+    margin-top: 10px;
+}
+
+button:hover{
+    box-shadow: 1px 2px 18px red;
+}
+
+.chapitre6 a p{
+    margin-left: 20px;
+
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: black;
     
 }
 
-#icons a :hover{
-    transform: scale(1.5);
-    transition: 0.1s;
+/*footer*/
+.icons{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.icons i:hover{
+    color: white;
 }
 
-form a{
-    font-size: 5em;
+@media all and (max-width: 798px) {
+
+nav {
+        width: 180px;
+        height: 100vh;
+        flex-direction: column;
+
+        margin-left: -45px;
+
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+
+    nav ul li a {
+        font-size: 0.7rem;
+        padding-left: 2px;
+    }
+
+
+    nav ul li i {
+        font-size: 10px;
+
+
+    }
+
+    /*----------chapitre1----------*/
+
+    .chapitre1 {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .chapitre1 h1 {
+        font-size: 1.5rem;
+        
+
+    }
+    .cv{
+        margin-left: -50px;
+        margin-top: 50px;
+    }
+
+    .chapitre1 p {
+        font-size: 1rem;
+    }
+
+    .chapitre1 img {
+        height: 180px;
+        object-fit: cover;
+        border-radius: 20px;
+        box-shadow: inset;
+        position: absolute;
+        margin-top: 300px;
+        margin-left: -250px;
+    
+    }
+
+
+
+
+    /*-------------chapitre2----------*/
+
+    .chapitre2 {
+        width: 100vw;
+        height: 100vh;
+
+    }
+
+    .ch2 {
+        margin-left: 90px;
+        margin-top: -30px;
+    }
+
+    .chapitre2 h2 {
+        font-size: 1.5rem;
+
+    }
+
+    .chapitre2 p {
+        font-size: 1rem;
+    }
+
+    .chapitre2 video {
+        width: 180px;
+        object-fit: cover;
+        border-radius: 20px;
+        box-shadow: inset;
+        position: absolute;
+       margin-left: -450px;
+       margin-top: 130px;
+    }
+
+    /*chapitre 3*/
+
+    .chapitre3 {
+        width: 100vw;
+    }
+
+    .chapitre3 h2 {
+        font-size: 1.5rem;
+
+    }
+
+    .chapitre3 ul li {
+        font-size: 1rem;
+    }
+
+    /*chapitre4*/
+    .chapitre4 {
+        width: 100vw;
+        height: 100vh;
+
+
+    }
+
+    .chapitre4 h2 {
+        font-size: 1.5rem;
+        margin-top: -400px;
+
+
+
+    }
+
+    .chapitre4 table {
+
+        height: 300px;
+       margin-left: -50px;
+        width: 75%;
+    }
+
+
+    #tab td img {
+        height: 70px;
+
+    }
+
+    /*chapitre 5*/
+
+    .chapitre5 {
+        width: 100vw;
+        height: 100vh;
+        margin-left: 100px;
+        display: grid;
+        align-items: center;
+        background-color: rgb(246, 239, 239);
+    }
+
+    .chapitre5 h2 {
+        font-size: 1.5rem;
+        color: gray;
+        text-shadow: 2px 5px 1px black;
+        margin-left: 50px;
+        margin: 50px;
+
+    }
+
+    #tab2 {
+        
+        height: 300px;
+        margin-left: -150px;
+
+    }
+
+    .chapitre5 li {
+        font-size: 1rem;
+        margin-left: 20px;
+    
+
+    }
+
+    /*chapitre6*/
+
+    .chapitre6 {
+        width: 100vw;
+
+    }
+
+    .chapitre6 h2 {
+        font-size: 1.5rem;
+
+    }
+
+    form {
+        margin-left: 30px;
+    }
+
+    label {
+        margin-left: 5px;
+        margin-top: 5px;
+
+    }
+
+    input {
+        margin-left: 10px;
+    }
+
+    textarea {
+        width: 50%;
+        height: 200px;
+        margin-left: 120px;
+        margin-top: 10px;
+
+    }
+
+    button {
+        width: 100px;
+        height: auto;
+        text-align: center;
+        margin-left: 350px;
+        margin-top: 10px;
+    }
+
+    button:hover {
+        box-shadow: 1px 2px 18px red;
+    }
+
+    .chapitre6 a p {
+        margin-left: 50px;
+
+    }
+
+   
+
+    /*footer*/
+    .icons {
+        
+        margin-left: 150px;
+        
+
+    }
+
+    
 }
 
 
